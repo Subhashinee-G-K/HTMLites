@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: whitesmoke;
+        }
+        form {
+            margin: 20px auto;
+            width: 300px;
+            padding: 20px;
+            color: white;
+            border: 1px solid #ccc;
+            background-color: #181838;
+            border-radius: 5px;
+            margin-top:5%;
+        }
+        label, input, button {
+            display: block;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body><br><br><br><br>
+    <h1 style="text-align: center;">LOGIN</h1>
+    <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+       
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+       
+        <button type="submit">Login</button>
+    </form>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Get form data
+            var formData = new FormData(this);
+            var username = formData.get('username');
+            var password = formData.get('password');
+
+            // Perform authentication (dummy example)
+            if (username === 'IIC' && password === 'IICMEMBER') {
+                alert('Login successful!');
+                // Here you can redirect the user to another page or perform other actions
+            } else {
+                alert('Invalid username or password. Please try again.');
+            }
+        });
+    </script>
+</body>
+</html>
