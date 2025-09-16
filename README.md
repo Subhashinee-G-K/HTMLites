@@ -1,1 +1,17 @@
-# htmlites
+# HTMLites 🌐
+
+**HTMLites** is a responsive website designed to showcase modern web development skills using HTML, CSS, and JavaScript. The project demonstrates clean design, interactive elements, and user-friendly navigation.  
+
+---
+
+## 🌟 Features
+- Fully responsive layout suitable for desktop, tablet, and mobile devices.  
+- Modern, clean design with attention to user experience.  
+- Navigation bar with smooth scrolling to different sections.  
+- Interactive elements like buttons, forms, and image galleries.  
+- Optimized for performance and quick loading.  
+
+---
+
+## 🛠 Tech Stack
+- **Frontend:** HTML5, CSS3, JavaScript  
